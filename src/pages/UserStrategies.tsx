@@ -5,7 +5,8 @@ import Login from "../components/Login";
 import StrategyCardGrid from "../components/StrategyCardGrid";
 import { getUserStrategies } from "../app/reducers/getUserStrategies";
 
-function MyList() {
+
+function UserStrategies() {
     const { userInfo } = useAppSelector(({app})=>app);
     const { userStrategies } = useAppSelector(({strategy}) => strategy);
     const dispatch = useAppDispatch();
@@ -13,7 +14,7 @@ function MyList() {
         dispatch(getUserStrategies())
     }, [userInfo, dispatch]);
     useEffect(()=>{
-        console.log({userStrategies})
+        // console.log({userStrategies})
     }, [userStrategies])
     return (
     <div className="list">
@@ -22,4 +23,4 @@ function MyList() {
     );
 }
 
-export default Wrapper(MyList);
+export default Wrapper(UserStrategies);

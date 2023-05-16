@@ -24,7 +24,7 @@ export const getStrategyData = createAsyncThunk(
 
                 
 
-                console.log(strategy)
+                // console.log(strategy)
 
                 const types = data.types.map(
                     ({type:{name}}:{type:{name:string}}) => ({

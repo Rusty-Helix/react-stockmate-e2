@@ -16,10 +16,10 @@ function Navbar() {
             route: "/search",
         },{
             name: "你的策略",
-            route: "/list",
+            route: "/user-strategies",
         },{
             name: "投資筆記",
-            route: "/strategy",
+            route: "/strategy/:id",
         },{
             name: "檢討報告",
             route: "/about",

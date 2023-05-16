@@ -11,7 +11,7 @@ import {clearToasts, setUserStatus} from "./app/slices/AppSlice";
 
 import "./scss/index.scss";
 import Search from "./pages/Search";
-import MyList from "./pages/MyList";
+import UserStrategies from "./pages/UserStrategies";
 import About from "./pages/About";
 import Compare from "./pages/Compare";
 import Strategy from "./pages/Strategy";
@@ -60,11 +60,11 @@ function App() {
           <Navbar />
           <Routes>
             <Route element={<Search />} path="/search" />
-            <Route element={<MyList />} path="/list" />
+            <Route element={<UserStrategies />} path="/user-strategies" />
             <Route element={<About />} path="/about" />
             <Route element={<Compare />} path="/compare" />
             <Route element={<Strategy />} path="/strategy/:id" />
-            <Route element={<Navigate to="/strategy/1"/>} path="*"/>
+            <Route element={<Navigate to="/user-strategies"/>} path="*"/>
           </Routes>
           <Footer />
           <ToastContainer />
