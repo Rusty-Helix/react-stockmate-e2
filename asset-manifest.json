@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/react-stockmate-e2/static/css/main.1af54587.css",
-    "main.js": "/react-stockmate-e2/static/js/main.86dfbed8.js",
+    "main.css": "/react-stockmate-e2/static/css/main.78ccbfca.css",
+    "main.js": "/react-stockmate-e2/static/js/main.b12ce353.js",
     "static/media/stockmate-logo.png": "/react-stockmate-e2/static/media/stockmate-logo.208cf2b58865cd49f906.png",
+    "static/media/creatorAvatar.png": "/react-stockmate-e2/static/media/creatorAvatar.505dc1a9406f85d5eb49.png",
     "static/media/kdj.jpg": "/react-stockmate-e2/static/media/kdj.b5d2f23f9d195b73465d.jpg",
     "static/media/rsi20.jpg": "/react-stockmate-e2/static/media/rsi20.9c3cc2116beeaafffe20.jpg",
     "static/media/overbought-rsi.jpg": "/react-stockmate-e2/static/media/overbought-rsi.02f52a7066c7a9bf77ad.jpg",
@@ -112,11 +113,11 @@
     "static/media/normal.svg": "/react-stockmate-e2/static/media/normal.461bd7373ca90faa99a317a27dfa80d8.svg",
     "index.html": "/react-stockmate-e2/index.html",
     "static/media/electric.svg": "/react-stockmate-e2/static/media/electric.5b9316bb6f1ac3d4dfb502c6279b27bb.svg",
-    "main.1af54587.css.map": "/react-stockmate-e2/static/css/main.1af54587.css.map",
-    "main.86dfbed8.js.map": "/react-stockmate-e2/static/js/main.86dfbed8.js.map"
+    "main.78ccbfca.css.map": "/react-stockmate-e2/static/css/main.78ccbfca.css.map",
+    "main.b12ce353.js.map": "/react-stockmate-e2/static/js/main.b12ce353.js.map"
   },
   "entrypoints": [
-    "static/css/main.1af54587.css",
-    "static/js/main.86dfbed8.js"
+    "static/css/main.78ccbfca.css",
+    "static/js/main.b12ce353.js"
   ]
 }
