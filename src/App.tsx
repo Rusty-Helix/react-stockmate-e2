@@ -64,7 +64,7 @@ function App() {
             <Route element={<About />} path="/about" />
             <Route element={<Compare />} path="/compare" />
             <Route element={<Strategy />} path="/strategy/:id" />
-            <Route element={<Navigate to="/user-strategies"/>} path="*"/>
+            <Route element={<Navigate to="/about"/>} path="*"/>
           </Routes>
           <Footer />
           <ToastContainer />

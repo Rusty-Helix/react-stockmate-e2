@@ -46,7 +46,7 @@ export const addStrategyToList = createAsyncThunk("strategy/addStrategy", async 
             
             await dispatch(getUserStrategies());
 
-            return dispatch(setToast(`「${strategy.name}」被加入你的策略卡組`));
+            return dispatch(setToast(`「${strategy.name}」已被加入你的策略卡組`));
         } else {
             return dispatch(
                 setToast(`「${strategy.name}」已在你的策略卡組`))

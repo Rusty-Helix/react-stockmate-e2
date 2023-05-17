@@ -1,9 +1,28 @@
-import React from "react"
+import React from "react";
 import Wrapper from "../sections/Wrapper";
-import Compare from "./Compare";
+import avatarImage from "../assets/creatorAvatar.png";
+import { FaYoutube, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function About() {
-    return <div>檢討報告</div>
+  return (
+    <div className="profile">
+      <img src={avatarImage} alt="" className="profile-image" />
+      <h1 className="profile-text">Stockmate 股伴</h1>
+      <h2 className="profile-text">你的最佳投資助手</h2>
+      <h4 className="profile-text">大三專題第4組</h4>
+      <div className="profile-links">
+        <a href="https://github.com/Rusty-Helix">
+          <FaGithub />
+        </a>
+        <a href="https://github.com/Rusty-Helix">
+          <FaYoutube />
+        </a>
+        <a href="https://github.com/Rusty-Helix">
+          <FaLinkedin />
+        </a>
+      </div>
+    </div>
+  );
 }
 
 export default Wrapper(About);
