@@ -8,6 +8,10 @@ import { addToCompare } from "../app/slices/StrategySlice";
 import { addStrategyToList } from "../app/reducers/addStrategyToList";
 import { removeStrategy } from "../app/reducers/removeStrategyFromUserList";
 
+import buyingSignal from "../../assets/bullish-icon.png";
+import sellingSignal from "../../assets/selling-icon.png";
+
+
 import { setToast } from "../app/slices/AppSlice";
 
 function StrategyCardGrid({strategies}: {strategies:userStrategiesType[]}) {
@@ -43,15 +47,15 @@ function StrategyCardGrid({strategies}: {strategies:userStrategiesType[]}) {
                             }
 
                         </div>
-                        {/* <div className="strategy-card-compare">
+                        <div className="strategy-card-compare">
                             <IoGitCompare
                             onClick={()=>{
-                                dispatch(addToCompare(strategyData))
-                                dispatch(setToast(`${strategyData.name} has been added to compare queue`));
+                                // dispatch(addToCompare(strategyData))
+                                dispatch(setToast(`「${strategyData.name}」已被加入比對序列`));
                             }
                         }/>
 
-                        </div> */}
+                        </div>
                         <h3 className="strategy-card-title">{strategyData.name}</h3>
                         <img
                             // src="bearish-counterattack.jpg"
@@ -63,7 +67,8 @@ function StrategyCardGrid({strategies}: {strategies:userStrategiesType[]}) {
                             onClick={()=>navigate(`/strategy/${strategyData.id}`)}
                         />
                         {/* <div className="strategy-card-types">
-                            {strategyData.types.map(
+                            {
+                            strategyData.types.map(
                             (type:strategyTypeInterface, index:number)=>{
                                 const keys = Object.keys(type);
                                 return (
@@ -83,7 +88,8 @@ function StrategyCardGrid({strategies}: {strategies:userStrategiesType[]}) {
                                             </h6>
                                         </div>
                                     )
-                            })}
+                            })
+                            }
                         </div> */}
                     </div>
                 )})
