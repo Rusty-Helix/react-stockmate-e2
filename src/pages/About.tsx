@@ -9,7 +9,7 @@ function About() {
       <img src={avatarImage} alt="" className="profile-image" />
       <h1 className="profile-text">Stockmate 股伴</h1>
       <h2 className="profile-text">你的最佳投資助手</h2>
-      <h4 className="profile-text">大三專題第4組</h4>
+      <h4 className="profile-text">大三專題第四組</h4>
       <div className="profile-links">
         <a href="https://github.com/Rusty-Helix">
           <FaGithub />
