@@ -5,7 +5,6 @@ import { getInitialStrategyData } from "../reducers/getInitialStrategyData";
 import { getStrategyData } from "../reducers/getStrategyData";
 import { getUserStrategies} from "../reducers/getUserStrategies";
 import { removeStrategy } from "../reducers/removeStrategyFromUserList";
-import { strategyJSONString } from "../../utils/StrategyJSONString";
 
 const initialState:StrategyTypeInitialState = {
     allStrategy: undefined,
@@ -41,19 +40,6 @@ export const StrategySlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(getInitialStrategyData.fulfilled, (state, action)=>{
             state.allStrategy = action.payload
-            
-            // console.log(action.payload)
-            const strategyJSONArray = strategyJSONString.split('},')
-            const strategyArray = []
-            for (let i = 0; i < strategyJSONArray.length-1; i++) {
-
-                strategyJSONArray[i] = strategyJSONArray[i] + "}"
-                // console.log(JSON.parse(strategyJSONArray[i]))
-                strategyArray.push(JSON.parse(strategyJSONArray[i]))
-            }
-            strategyArray.push(JSON.parse(strategyJSONArray[strategyJSONArray.length-1]))
-            // console.log(strategyArray)
-            // state.allStrategy = strategyArray
         });
         builder.addCase(getStrategyData.fulfilled, (state, action)=>{
             //@ts-ignore

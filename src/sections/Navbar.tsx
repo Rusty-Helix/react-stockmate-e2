@@ -38,7 +38,6 @@ function Navbar() {
             underlines[i].style.transform=`translate3d(${index*100}%,0,0)`
         }
     }
-    // console.log({stockmateLogo})
 
     return <nav>
         <div className="block">

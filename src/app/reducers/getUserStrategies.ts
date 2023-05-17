@@ -6,6 +6,8 @@ import { userStrategiesType } from "../../utils/Types";
 import { strategyTypes } from "../../utils/getStrategyTypes";
 import { images, defaultImages } from "../../utils/getStrategyImages";
 
+const illustrations = Object.values(images)
+
 export const getUserStrategies = createAsyncThunk(
     "strategy/userList",
     async (args, {getState})=>{
@@ -25,11 +27,13 @@ export const getUserStrategies = createAsyncThunk(
                 const userStrategies:userStrategiesType[] = [];
                 fetchedStrategies.forEach(async (strategy)=>{
                     const strategies = await strategy.data().strategy;
+                    // console.log(strategies)
                     // @ts-ignore
-                    let image = images[strategies.id]
+                    let image = illustrations[strategies.id]
+                    // console.log(image)
                     if(!image){
                         // @ts-ignore
-                        image = defaultImages[strategies.id];
+                        image = illustrations[0];
                     }
                     
                     const types = strategies.types.map((name:string)=>(
@@ -45,6 +49,7 @@ export const getUserStrategies = createAsyncThunk(
                         types,
                     });
                 });
+                // console.log(userStrategies)
                 return userStrategies;
             }
             return [];

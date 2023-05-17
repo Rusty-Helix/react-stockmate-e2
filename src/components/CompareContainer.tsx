@@ -29,7 +29,6 @@ function CompareContainer({
         const statsSet = new Set<string>();
         types.forEach((type:strategyTypeInterface)=>{
             const key = Object.keys(type)[0];
-            // console.log({type})
             type[key][statType].forEach((stat:string)=>{
                 if(!statsSet.has(stat)){
                     //@ts-ignore

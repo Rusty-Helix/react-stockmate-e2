@@ -6,8 +6,6 @@ import { strategyTypes } from "../../utils/getStrategyTypes";
 import { strategyObject } from "../../utils/StrategyJSONString";
 
 const illustrations = Object.values(images)
-// console.log(Object.keys(images))
-// console.log(illustrations)
 
 export const getStrategyData = createAsyncThunk(
     "strategy/randomStrategy",
@@ -15,16 +13,13 @@ export const getStrategyData = createAsyncThunk(
         try {
             const strategyData: generatedStrategyType[] = [];
             for await (const strategy of strategyObject) {
+                // console.log(strategy)
                 const {data}: {
                     data: {
                         id: number;
                         types:{type:generatedStrategyType}[];
                     };
                 } = await axios.get(strategies[0].url);
-
-                
-
-                // console.log(strategy)
 
                 const types = data.types.map(
                     ({type:{name}}:{type:{name:string}}) => ({
@@ -33,28 +28,30 @@ export const getStrategyData = createAsyncThunk(
                     })
                 );
                 // @ts-expect-error
-                let illustration:string = illustrations[data.id]
-                // console.log(illustration)
+                let illustration:string = illustrations[strategy.id-1]
+                console.log(illustrations)
                 if(!illustration) {
-                    // console.log(999)
                     // @ts-expect-error
                     // image = defaultImages[data.id];
                     illustration = illustrations[0];
+                    console.log("fuck")
+                    console.log(illustration)
                 }
 
                 if(illustration) {
-                    // console.log(illustration)
                     strategyData.push({
                         name: strategy.name,
                         id: strategy.id,
                         image: illustration,
                         types,
                     })
-                    // console.log(illustration)
+                    // console.log(strategyData)
                 }
+                // console.log(strategy.id)
+                // console.log(strategy.name)
+                // console.log(illustration)
+                // console.log("---")
             }
-            // console.log(strategyData)
-            // console.log(strategyObject)
             return strategyData
         } catch (err) {
            console.log(err); 

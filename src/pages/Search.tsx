@@ -3,15 +3,12 @@ import Wrapper from "../sections/Wrapper";
 import {useAppDispatch, useAppSelector} from "../app/hooks";
 import {getInitialStrategyData} from "../app/reducers/getInitialStrategyData";
 
-import {getAllStrategies} from "../app/reducers/getInitialStrategyData";
-
 import {getStrategyData} from "../app/reducers/getStrategyData";
 import StrategyCardGrid from "../components/StrategyCardGrid";
 import {debounce} from "../utils/Debounce";
 
 function Search() {
     const dispatch = useAppDispatch();
-    // console.log(allStrategy)
     const { allStrategy, randomStrategies } = useAppSelector(
         ({strategy})=>strategy
     );
@@ -22,12 +19,10 @@ function Search() {
 
     useEffect(()=> {
         if(allStrategy) {
-            // console.log(allStrategy)
             const clonedStrategies = [...allStrategy];
             const randomStrategiesId = clonedStrategies
             // .sort(()=>Math.random()-Math.random())
             .slice(0, 50);
-            // console.log(randomStrategiesId)
             dispatch(getStrategyData(randomStrategiesId));
         }
     }, [allStrategy, dispatch])
@@ -48,7 +43,6 @@ function Search() {
             dispatch(getStrategyData(randomStrategiesId));            
         }
     }
-    // console.log({randomStrategies})
     
     return (<div>
         <div className="search">

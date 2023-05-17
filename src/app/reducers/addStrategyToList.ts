@@ -46,10 +46,10 @@ export const addStrategyToList = createAsyncThunk("strategy/addStrategy", async 
             
             await dispatch(getUserStrategies());
 
-            return dispatch(setToast(`${strategy.name} added to your collection`));
+            return dispatch(setToast(`「${strategy.name}」被加入你的策略卡組`));
         } else {
             return dispatch(
-                setToast(`${strategy.name} is already in your collection`))
+                setToast(`「${strategy.name}」已在你的策略卡組`))
         }
     } catch(err) {
         console.log(err)

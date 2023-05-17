@@ -14,7 +14,6 @@ function UserStrategies() {
         dispatch(getUserStrategies())
     }, [userInfo, dispatch]);
     useEffect(()=>{
-        // console.log({userStrategies})
     }, [userStrategies])
     return (
     <div className="list">

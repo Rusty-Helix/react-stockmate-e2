@@ -29,8 +29,6 @@ const fetchImages = (context: string) => {
 //   // const illustrations = {}
 //   // function importAll(r) {
 //     let illustrations = {};
-//     console.log(context)
-//     console.log(context.keys())
 //     context.keys().map(item => { illustrations[item.replace('./', '')] = r(item); });
 //     return illustrations;
 //   // }
@@ -38,7 +36,6 @@ const fetchImages = (context: string) => {
 // }
 
 
-  // console.log(illustrations)
   // return illustrations
 // }
 // export const illustrations = strategyIllustrations()

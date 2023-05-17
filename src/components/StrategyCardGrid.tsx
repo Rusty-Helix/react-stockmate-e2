@@ -21,7 +21,6 @@ function StrategyCardGrid({strategies}: {strategies:userStrategiesType[]}) {
             {
                 strategies && strategies.length>0 &&
                 strategies?.map((strategyData:userStrategiesType)=>{
-                    // console.log(strategyData.image)
                     return (
                     <div className="strategy-card" key={strategyData.id}>
                         <div className="strategy-card-list">
@@ -67,7 +66,6 @@ function StrategyCardGrid({strategies}: {strategies:userStrategiesType[]}) {
                             {strategyData.types.map(
                             (type:strategyTypeInterface, index:number)=>{
                                 const keys = Object.keys(type);
-                                // console.log({keys})
                                 return (
                                         <div
                                             className="strategy-card-types-type"
