@@ -19,7 +19,7 @@ function Navbar() {
             route: "/user-strategies",
         },{
             name: "投資筆記",
-            route: "/strategy/:id",
+            route: `/strategy`,
         },{
             name: "檢討報告",
             route: "/about",
