@@ -832,6 +832,19 @@ const strategyString = `{
   },
   {
     "id": 65,
+    "title": "KDJ (隨機指標)",
+    "strategyType": "candlestick pattern",
+    "signalType": "buy",
+    "illustration": "kdj.jpg",
+    "userUsageRate": 50,
+    "publicUsageRate": 50,
+    "description": "golden cross is ...",
+    "englishTitle": "Stochastic Oscillator",
+    "pairId": 90,
+    "Counterpart": 1
+  },
+  {
+    "id": 66,
     "title": "MACD > 80",
     "strategyType": "index trend",
     "signalType": "buy",
@@ -844,7 +857,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 66,
+    "id": 67,
     "title": "十字晨星",
     "strategyType": "candlestick pattern",
     "signalType": "buy",
@@ -857,7 +870,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 67,
+    "id": 68,
     "title": "一般晨星",
     "strategyType": "candlestick pattern",
     "signalType": "buy",
@@ -870,7 +883,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 68,
+    "id": 69,
     "title": "疊疊空方炮",
     "strategyType": "candlestick pattern",
     "signalType": "sell",
@@ -883,7 +896,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 69,
+    "id": 70,
     "title": "疊疊多方炮",
     "strategyType": "candlestick pattern",
     "signalType": "buy",
@@ -896,7 +909,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 70,
+    "id": 71,
     "title": "好友反攻",
     "strategyType": "candlestick pattern",
     "signalType": "buy",
@@ -909,7 +922,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 71,
+    "id": 72,
     "title": "能量潮升",
     "strategyType": "index trend",
     "signalType": "buy",
@@ -922,7 +935,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 72,
+    "id": 73,
     "title": "能量潮落",
     "strategyType": "index trend",
     "signalType": "sell",
@@ -935,7 +948,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 73,
+    "id": 74,
     "title": "高檔鈍化 (KD)",
     "strategyType": "index trend",
     "signalType": "buy",
@@ -948,7 +961,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 74,
+    "id": 75,
     "title": "高檔鈍化 (RSI)",
     "strategyType": "index trend",
     "signalType": "buy",
@@ -961,7 +974,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 75,
+    "id": 76,
     "title": "低檔鈍化 (KD)",
     "strategyType": "index trend",
     "signalType": "sell",
@@ -974,7 +987,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 76,
+    "id": 77,
     "title": "低檔鈍化 (RSI)",
     "strategyType": "index trend",
     "signalType": "sell",
@@ -984,19 +997,6 @@ const strategyString = `{
     "description": "golden cross is ...",
     "englishTitle": "Oversold RSI",
     "pairId": 76,
-    "Counterpart": 1
-  },
-  {
-    "id": 77,
-    "title": "ROC (變化率)",
-    "strategyType": "candlestick pattern",
-    "signalType": "buy",
-    "illustration": "roc.jpg",
-    "userUsageRate": 50,
-    "publicUsageRate": 50,
-    "description": "golden cross is ...",
-    "englishTitle": "Rate of Change",
-    "pairId": 77,
     "Counterpart": 1
   },
   {
@@ -1105,6 +1105,19 @@ const strategyString = `{
   },
   {
     "id": 86,
+    "title": "ROC (變化率)",
+    "strategyType": "candlestick pattern",
+    "signalType": "buy",
+    "illustration": "roc.jpg",
+    "userUsageRate": 50,
+    "publicUsageRate": 50,
+    "description": "golden cross is ...",
+    "englishTitle": "Rate of Change",
+    "pairId": 77,
+    "Counterpart": 1
+  },
+  {
+    "id": 87,
     "title": "RSI < 20",
     "strategyType": "index value",
     "signalType": "buy",
@@ -1117,7 +1130,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 87,
+    "id": 88,
     "title": "RSI > 80",
     "strategyType": "index value",
     "signalType": "sell",
@@ -1130,7 +1143,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 88,
+    "id": 89,
     "title": "南方三星",
     "strategyType": "candlestick pattern",
     "signalType": "sell",
@@ -1143,7 +1156,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 89,
+    "id": 90,
     "title": "仙人指路",
     "strategyType": "candlestick pattern",
     "signalType": "buy",
@@ -1153,19 +1166,6 @@ const strategyString = `{
     "description": "golden cross is ...",
     "englishTitle": "Steady Guidance",
     "pairId": 89,
-    "Counterpart": 1
-  },
-  {
-    "id": 90,
-    "title": "KDJ (隨機指標)",
-    "strategyType": "candlestick pattern",
-    "signalType": "buy",
-    "illustration": "kdj.jpg",
-    "userUsageRate": 50,
-    "publicUsageRate": 50,
-    "description": "golden cross is ...",
-    "englishTitle": "Stochastic Oscillator",
-    "pairId": 90,
     "Counterpart": 1
   },
   {
@@ -1248,6 +1248,19 @@ const strategyString = `{
   },
   {
     "id": 97,
+    "title": "一陽穿三線(三線反擊)",
+    "strategyType": "candlestick pattern",
+    "signalType": "buy",
+    "illustration": "three-lined-counterattack.jpg",
+    "userUsageRate": 50,
+    "publicUsageRate": 50,
+    "description": "golden cross is ...",
+    "englishTitle": "Three-Lined Counterattack",
+    "pairId": 100,
+    "Counterpart": 1
+  },
+  {
+    "id": 98,
     "title": "三外部下跌",
     "strategyType": "candlestick pattern",
     "signalType": "sell",
@@ -1260,7 +1273,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 98,
+    "id": 99,
     "title": "三外部上漲",
     "strategyType": "candlestick pattern",
     "signalType": "buy",
@@ -1273,7 +1286,7 @@ const strategyString = `{
     "Counterpart": 1
   },
   {
-    "id": 99,
+    "id": 100,
     "title": "白色三兵",
     "strategyType": "candlestick pattern",
     "signalType": "buy",
@@ -1283,19 +1296,6 @@ const strategyString = `{
     "description": "golden cross is ...",
     "englishTitle": "Three White Soldiers",
     "pairId": 99,
-    "Counterpart": 1
-  },
-  {
-    "id": 100,
-    "title": "一陽穿三線(三線反擊)",
-    "strategyType": "candlestick pattern",
-    "signalType": "buy",
-    "illustration": "three-lined-counterattack.jpg",
-    "userUsageRate": 50,
-    "publicUsageRate": 50,
-    "description": "golden cross is ...",
-    "englishTitle": "Three-Lined Counterattack",
-    "pairId": 100,
     "Counterpart": 1
   },
   {
@@ -1401,6 +1401,19 @@ const strategyString = `{
     "englishTitle": "William %R",
     "pairId": 108,
     "Counterpart": 1
+  },
+  {
+    "id": "",
+    "title": "",
+    "strategyType": "",
+    "signalType": "",
+    "illustration": "",
+    "userUsageRate": 50,
+    "publicUsageRate": 50,
+    "description": "golden cross is ...",
+    "englishTitle": "",
+    "pairId": "",
+    "Counterpart": ""
   }`
 
 const strategyJSONArray = strategyString.split('},')
