@@ -29,13 +29,11 @@ export const getStrategyData = createAsyncThunk(
                 );
                 // @ts-expect-error
                 let illustration:string = illustrations[strategy.id-1]
-                console.log(illustrations)
+                // console.log(illustrations)
                 if(!illustration) {
                     // @ts-expect-error
                     // image = defaultImages[data.id];
                     illustration = illustrations[0];
-                    console.log("fuck")
-                    console.log(illustration)
                 }
 
                 if(illustration) {

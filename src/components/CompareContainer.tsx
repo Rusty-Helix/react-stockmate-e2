@@ -42,7 +42,7 @@ function CompareContainer({
     const getStates = () => {
         const data = createStatsArray(strategy?.types!, "strength");
         return (
-                <>
+                <div>
                     <div className="strategy-types">
                         <h4 className="strategy-type-title">Strength</h4>
                         <div className="strategy-type-icons">
@@ -112,10 +112,10 @@ function CompareContainer({
                         </div>
                     </div>
 
-                </>
+                </div>
             )
     };
-    return <div>
+    return <div className="compare-container">
         {
             isEmpty && (
                 <div className="empty">

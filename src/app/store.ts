@@ -2,6 +2,8 @@ import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { AppSlice } from "./slices/AppSlice";
 import { StrategySlice } from "./slices/StrategySlice";
 
+// deposit all your global states (redux)
+
 export const store = configureStore({
   reducer: {
     app: AppSlice.reducer,

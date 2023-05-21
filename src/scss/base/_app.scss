@@ -22,10 +22,14 @@
         border: 0.5px solid rgba(255, 255, 255, 0.203);
         border-top: none;
         border-bottom: none;
+        // width: 90vw;
         height: 80vh;
         background-color: rgba(255, 255, 255, 0.052);
         overflow: hidden;
         // padding-bottom: 10rem;
+        .search {
+            width: 92vw;
+        }
     }
 }
 

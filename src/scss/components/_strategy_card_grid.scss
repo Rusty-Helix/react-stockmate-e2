@@ -1,7 +1,9 @@
 .strategy-card-grid-container {
     max-height: 80vh;
+    // width: 92vw;
     overflow-y: scroll;
-    // background-color: red;
+    color: white;
+    text-transform: uppercase;
     .strategy-card-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -63,6 +65,7 @@
             }
             &-image {
                 cursor: pointer;
+                filter: drop-shadow(20px 10px 10px #14121281);
                 height: 10rem;
             }
             &-types {
