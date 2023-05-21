@@ -1,6 +1,8 @@
 export interface AppTypeInitialState {
-    toasts:string[];
+    isLoading: boolean;
     userInfo: undefined | { email: string };
+    toasts:string[];
+    currentStrategyTab: string;
 }
 
 export interface StrategyTypeInitialState {
@@ -8,6 +10,7 @@ export interface StrategyTypeInitialState {
     randomStrategies: undefined | generatedStrategyType[];
     compareQueue: generatedStrategyType[];
     userStrategies: userStrategiesType[];
+    currentStrategy: undefined | currentStrategyType;
 }
 
 export interface genericStrategyType {
@@ -19,8 +22,29 @@ export interface generatedStrategyType {
     name: string;
     id: number;
     image: string;  
-    // types: 
     types: strategyTypeInterface[]
+}
+
+
+export interface userStrategiesType extends generatedStrategyType {
+    firebaseId?: string;
+}
+
+export interface currentStrategyType {
+  id: number;
+  name: string;
+  types: strategyTypeInterface[];
+  image: string;
+  stats: strategyStatsType[];
+  encounters: string[];
+  evolutionLevel: number;
+  evolution: { level: number; pokemon: { name: string; url: string } }[];
+  pokemonAbilities: { abilities: string[]; moves: string[] };
+}
+
+export interface strategyStatsType {
+  name: string;
+  value: string;
 }
 
 export interface strategyTypeInterface {
@@ -33,15 +57,12 @@ export interface strategyTypeInterface {
     }
 }
 
-export interface userStrategiesType extends generatedStrategyType {
-    firebaseId?: string;
-}
-
 export type strategyStatType =
     | "vulnerable"
     | "weakness"
     | "strength"
     | "resistance"
+
 
 export interface strategyStatsType {
     name:string,

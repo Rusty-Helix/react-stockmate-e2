@@ -11,6 +11,7 @@ const initialState:StrategyTypeInitialState = {
     randomStrategies: undefined,
     compareQueue: [],
     userStrategies: [],
+    currentStrategy: undefined,
 };
 
 export const StrategySlice = createSlice({
@@ -35,7 +36,11 @@ export const StrategySlice = createSlice({
             const queue = [...state.compareQueue];
             queue.splice(index, 1);
             state.compareQueue=queue;
-        }
+        },
+        setCurrentStrategy: (state, action) => {
+            state.currentStrategy = action.payload;
+        },
+        
     },
     extraReducers: (builder) => {
         builder.addCase(getInitialStrategyData.fulfilled, (state, action)=>{
@@ -60,4 +65,8 @@ export const StrategySlice = createSlice({
     }
 });
 
-export const { addToCompare, removeFromCompare } = StrategySlice.actions;
+export const {
+    addToCompare,
+    removeFromCompare,
+    setCurrentStrategy,
+} = StrategySlice.actions;

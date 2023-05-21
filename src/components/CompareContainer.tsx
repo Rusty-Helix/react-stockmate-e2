@@ -1,5 +1,3 @@
-import React from "react";
-import Wrapper from "../sections/Wrapper";
 import { FaPlus } from "react-icons/fa";
 import { useNavigate} from "react-router-dom";
 import {
@@ -40,7 +38,7 @@ function CompareContainer({
         return statsArray;
     }
     const getStates = () => {
-        const data = createStatsArray(strategy?.types!, "strength");
+        // const data = createStatsArray(strategy?.types!, "strength");
         return (
                 <div>
                     <div className="strategy-types">
