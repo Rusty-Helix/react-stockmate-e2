@@ -1477,7 +1477,7 @@ const convertToExample = (object:any) => {
               }
             ]
           }
-          console.log(newObject)
+          // console.log(newObject)
           return newObject 
         }
         

@@ -38,7 +38,7 @@ export interface currentStrategyType {
   stats: strategyStatsType[];
   encounters: string[];
   evolutionLevel: number;
-  evolution: { level: number; pokemon: { name: string; url: string } }[];
+  evolution: { level: number; strategy: { name: string; url: string } }[];
   pokemonAbilities: { abilities: string[]; moves: string[] };
 }
 

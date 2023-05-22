@@ -1,6 +1,5 @@
 import {useEffect} from 'react'
 import Navbar from "./sections/Navbar";
-import Wrapper from "./sections/Wrapper";
 import Footer from "./sections/Footer";
 import Background from "./components/Background";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
@@ -16,7 +15,6 @@ import About from "./pages/About";
 import Compare from "./pages/Compare";
 import Strategy from "./pages/Strategy";
 // @ts-ignore
-import Playground from "./pages/Playground";
 import {useAppDispatch, useAppSelector} from "./app/hooks";
 import {onAuthStateChanged} from "firebase/auth";
 import {firebaseAuth} from "./utils/FirebaseConfig";
@@ -63,7 +61,7 @@ function App() {
             <Route element={<UserStrategies />} path="/user-strategies" />
             <Route element={<About />} path="/about" />
             <Route element={<Compare />} path="/compare" />
-            <Route element={<Strategy />} path="/strategy/:id" />
+            <Route element={<Strategy />} path="/strategy" />
             <Route element={<Navigate to="/about"/>} path="*"/>
           </Routes>
           <Footer />
