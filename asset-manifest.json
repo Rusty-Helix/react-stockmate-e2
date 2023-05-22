@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-stockmate-e2/static/css/main.78ccbfca.css",
-    "main.js": "/react-stockmate-e2/static/js/main.8e309b6f.js",
+    "main.css": "/react-stockmate-e2/static/css/main.16e8cf9f.css",
+    "main.js": "/react-stockmate-e2/static/js/main.aae276d3.js",
     "static/media/stockmate-logo.png": "/react-stockmate-e2/static/media/stockmate-logo.208cf2b58865cd49f906.png",
     "static/media/creatorAvatar.png": "/react-stockmate-e2/static/media/creatorAvatar.505dc1a9406f85d5eb49.png",
     "static/media/kdj.jpg": "/react-stockmate-e2/static/media/kdj.b5d2f23f9d195b73465d.jpg",
@@ -103,6 +103,7 @@
     "static/media/fighting.svg": "/react-stockmate-e2/static/media/fighting.8ec17be2626e8369535f106993564cbb.svg",
     "static/media/psychic.svg": "/react-stockmate-e2/static/media/psychic.1ff2b9e23a53e1e5af374154d4fcdb0c.svg",
     "static/media/poison.svg": "/react-stockmate-e2/static/media/poison.fe41a0ec7b6d42f12ac2d924b2b5db18.svg",
+    "index.html": "/react-stockmate-e2/index.html",
     "static/media/water.svg": "/react-stockmate-e2/static/media/water.2e85de338466746f5873fe65d29713ea.svg",
     "static/media/ice.svg": "/react-stockmate-e2/static/media/ice.a2369f6d8a91bdaa0127ea83dd561c42.svg",
     "static/media/fairy.svg": "/react-stockmate-e2/static/media/fairy.8b66343546115cb9cd9e43d74fbeebb5.svg",
@@ -111,13 +112,12 @@
     "static/media/ground.svg": "/react-stockmate-e2/static/media/ground.c88b21d0901c43780915d5c9971eaf78.svg",
     "static/media/dark.svg": "/react-stockmate-e2/static/media/dark.e139e03756497c2dbc6d1bafee68036b.svg",
     "static/media/normal.svg": "/react-stockmate-e2/static/media/normal.461bd7373ca90faa99a317a27dfa80d8.svg",
-    "index.html": "/react-stockmate-e2/index.html",
     "static/media/electric.svg": "/react-stockmate-e2/static/media/electric.5b9316bb6f1ac3d4dfb502c6279b27bb.svg",
-    "main.78ccbfca.css.map": "/react-stockmate-e2/static/css/main.78ccbfca.css.map",
-    "main.8e309b6f.js.map": "/react-stockmate-e2/static/js/main.8e309b6f.js.map"
+    "main.16e8cf9f.css.map": "/react-stockmate-e2/static/css/main.16e8cf9f.css.map",
+    "main.aae276d3.js.map": "/react-stockmate-e2/static/js/main.aae276d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.78ccbfca.css",
-    "static/js/main.8e309b6f.js"
+    "static/css/main.16e8cf9f.css",
+    "static/js/main.aae276d3.js"
   ]
 }
