@@ -64,7 +64,10 @@ function StrategyCardGrid({strategies}: {strategies:userStrategiesType[]}) {
                             alt="strategy"
                             className="strategy-card-image"
                             loading="lazy"
-                            onClick={()=>navigate(`/strategy/${strategyData.id}`)}
+                            onClick={()=>{
+                                // console.log(`${strategyData.id}`)
+                                navigate(`/strategy/${strategyData.id}`)}
+                            }
                         />
                         {/* <div className="strategy-card-types">
                             {

@@ -4,7 +4,7 @@ import {useAppSelector} from "../app/hooks";
 import CompareContainer from "../components/CompareContainer";
 // import {userStrategiesType} from "../utils/Types";
 
-function Compare() {
+function Stock() {
     const { compareQueue } = useAppSelector(({strategy})=>strategy)
     return <>
         <div className="compare">
@@ -20,4 +20,4 @@ function Compare() {
     </> 
 }
 
-export default Wrapper(Compare);
+export default Wrapper(Stock);

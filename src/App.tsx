@@ -9,11 +9,12 @@ import {clearToasts, setUserStatus} from "./app/slices/AppSlice";
 
 
 import "./scss/index.scss";
-import Search from "./pages/Search";
+import Strategies from "./pages/Strategies";
 import UserStrategies from "./pages/UserStrategies";
-import About from "./pages/About";
-import Compare from "./pages/Compare";
+import Review from "./pages/Review";
+import Stock from "./pages/Stock";
 import Strategy from "./pages/Strategy";
+import Simulation from "./pages/Simulation";
 // @ts-ignore
 import {useAppDispatch, useAppSelector} from "./app/hooks";
 import {onAuthStateChanged} from "firebase/auth";
@@ -57,13 +58,23 @@ function App() {
         <div className="app">
           <Navbar />
           <Routes>
-            <Route element={<Search />} path="/search" />
+            <Route element={<Strategies />} path="/strategies" />
             <Route element={<UserStrategies />} path="/user-strategies" />
-            <Route element={<About />} path="/about" />
-            <Route element={<Compare />} path="/compare" />
-            <Route element={<Strategy />} path="/strategy" />
-            <Route element={<Navigate to="/about"/>} path="*"/>
+            <Route element={<Review />} path="/review" />
+            <Route element={<Stock />} path="/stock" />
+            <Route element={<Strategy />} path="/strategy/:id" />
+            <Route element={<Strategy />} path="/strategy/" />
+            <Route element={<Simulation />} path="/simulation/" />
+            <Route element={<Navigate to="/strategies"/>} path="*"/>
           </Routes>
+         {/* {
+            true?
+            (
+            <Footer />
+              ):(
+            <Footer />
+            )
+          }  */}
           <Footer />
           <ToastContainer />
         </div>

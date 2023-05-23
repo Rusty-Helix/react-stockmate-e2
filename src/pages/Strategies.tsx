@@ -7,7 +7,7 @@ import {getStrategyData} from "../app/reducers/getStrategyData";
 import StrategyCardGrid from "../components/StrategyCardGrid";
 import {debounce} from "../utils/Debounce";
 
-function Search() {
+function Strategies() {
     const dispatch = useAppDispatch();
     const { allStrategy, randomStrategies } = useAppSelector(
         ({strategy})=>strategy
@@ -44,8 +44,8 @@ function Search() {
         }
     }
     
-    return (<div>
-        <div className="search">
+    return (<>
+        <div className="strategies">
             <input
                 type="text"
                 className="strategy-searchbar"
@@ -54,7 +54,7 @@ function Search() {
             />    
             <StrategyCardGrid strategies={randomStrategies!} />
         </div>
-    </div>)
+    </>)
 }
 
-export default Wrapper(Search);
+export default Wrapper(Strategies);

@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import stockmateLogo from "../assets/stockmate-logo.png"
+import stockmateLogo from "../assets/stockmate-logo.jpg"
 import {GiHamburgerMenu} from "react-icons/gi";
 import {Link, useLocation} from "react-router-dom";
 
@@ -9,20 +9,20 @@ function Navbar() {
 
     const navigationRoutes = [
         {
-            name: "交易紀錄",
-            route: "/compare",
+            name: "股市資訊",
+            route: "/stock",
         },{
             name: "策略圖鑑",
-            route: "/search",
+            route: "/strategies",
         },{
-            name: "你的策略",
-            route: "/user-strategies",
+            name: "模擬交易",
+            route: "/simulation",
         },{
             name: "投資筆記",
-            route: `/strategy`,
+            route: `/strategies`,
         },{
             name: "檢討報告",
-            route: "/about",
+            route: "/review",
         },
     ]
 

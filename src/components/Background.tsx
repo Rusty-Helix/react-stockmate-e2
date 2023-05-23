@@ -7,12 +7,12 @@ function Background() {
             <div className="background">
                 <img src={bullishIcon} alt="bullish" className="bullish-icon" />
                 <img src={bearishIcon} alt="bearish" className="bearish-icon" />
-                <img src={bullishIcon} alt="bullish" className="bullish-icon" />
+                {/* <img src={bullishIcon} alt="bullish" className="bullish-icon" />
                 <img src={bearishIcon} alt="bearish" className="bearish-icon" />
                 <img src={bullishIcon} alt="bullish" className="bullish-icon" />
                 <img src={bearishIcon} alt="bearish" className="bearish-icon" />
                 <img src={bullishIcon} alt="bullish" className="bullish-icon" />
-                <img src={bearishIcon} alt="bearish" className="bearish-icon" />
+                <img src={bearishIcon} alt="bearish" className="bearish-icon" /> */}
             </div>
         )
 }

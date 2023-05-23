@@ -1,4 +1,9 @@
 // @ts-nocheck
+import {CapableMoves} from "./CapableMoves";
+import {Description} from "./Description";
+import {Evolution} from "./Evolution";
+import {Locations} from "./Locations";
+import {Loader} from "../components/Loader";
 
 import Wrapper from "../sections/Wrapper"
 // import { useCallback, useEffect, useState } from "react"
@@ -424,7 +429,29 @@ Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-ohlcv.json', func
 
   return (
   <div>
-
+        {/* <>
+      {!isDataLoading && currentPokemon ? (
+        <>
+          {currentPokemonTab === pokemonTabs.description && <Description />}
+          {currentPokemonTab === pokemonTabs.evolution && <Evolution />}
+          {currentPokemonTab === pokemonTabs.locations && <Locations />}
+          {currentPokemonTab === pokemonTabs.moves && <CapableMoves />}
+        </>
+      ) : (
+        <Loader />
+      )}
+    </>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <hr></hr> */}
     <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/annotations/popup.css"></link>
 
     <script src="https://code.highcharts.com/stock/highstock.js"></script>

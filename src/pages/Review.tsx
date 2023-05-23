@@ -3,7 +3,7 @@ import Wrapper from "../sections/Wrapper";
 import avatarImage from "../assets/creatorAvatar.png";
 import { FaYoutube, FaGithub, FaLinkedin } from "react-icons/fa";
 
-function About() {
+function Review() {
   return (
     <div className="profile">
       <img src={avatarImage} alt="" className="profile-image" />
@@ -25,4 +25,4 @@ function About() {
   );
 }
 
-export default Wrapper(About);
+export default Wrapper(Review);
