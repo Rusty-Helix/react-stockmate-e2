@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/react-stockmate-e2/static/css/main.16e8cf9f.css",
-    "main.js": "/react-stockmate-e2/static/js/main.aae276d3.js",
-    "static/media/stockmate-logo.png": "/react-stockmate-e2/static/media/stockmate-logo.208cf2b58865cd49f906.png",
+    "main.css": "/react-stockmate-e2/static/css/main.45821071.css",
+    "main.js": "/react-stockmate-e2/static/js/main.376460e4.js",
     "static/media/creatorAvatar.png": "/react-stockmate-e2/static/media/creatorAvatar.505dc1a9406f85d5eb49.png",
     "static/media/kdj.jpg": "/react-stockmate-e2/static/media/kdj.b5d2f23f9d195b73465d.jpg",
     "static/media/rsi20.jpg": "/react-stockmate-e2/static/media/rsi20.9c3cc2116beeaafffe20.jpg",
@@ -79,6 +78,7 @@
     "static/media/roc.jpg": "/react-stockmate-e2/static/media/roc.75d766962f4e7ef6e797.jpg",
     "static/media/dawn-break.jpg": "/react-stockmate-e2/static/media/dawn-break.ee8a73eccd7f9df15ac0.jpg",
     "static/media/upside-tasuki-gap.jpg": "/react-stockmate-e2/static/media/upside-tasuki-gap.3c8a6447b22ca249d222.jpg",
+    "static/media/stockmate-logo.jpg": "/react-stockmate-e2/static/media/stockmate-logo.887ad6868de3a42b4a7c.jpg",
     "static/media/rising-wedge.jpg": "/react-stockmate-e2/static/media/rising-wedge.e0bc0231c738f110e05b.jpg",
     "static/media/evening-doji-star.jpg": "/react-stockmate-e2/static/media/evening-doji-star.66e59ae8482aa5c9f882.jpg",
     "static/media/clear-sky.jpg": "/react-stockmate-e2/static/media/clear-sky.67b8783e2ea77b0b03be.jpg",
@@ -113,11 +113,11 @@
     "static/media/dark.svg": "/react-stockmate-e2/static/media/dark.e139e03756497c2dbc6d1bafee68036b.svg",
     "static/media/normal.svg": "/react-stockmate-e2/static/media/normal.461bd7373ca90faa99a317a27dfa80d8.svg",
     "static/media/electric.svg": "/react-stockmate-e2/static/media/electric.5b9316bb6f1ac3d4dfb502c6279b27bb.svg",
-    "main.16e8cf9f.css.map": "/react-stockmate-e2/static/css/main.16e8cf9f.css.map",
-    "main.aae276d3.js.map": "/react-stockmate-e2/static/js/main.aae276d3.js.map"
+    "main.45821071.css.map": "/react-stockmate-e2/static/css/main.45821071.css.map",
+    "main.376460e4.js.map": "/react-stockmate-e2/static/js/main.376460e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.16e8cf9f.css",
-    "static/js/main.aae276d3.js"
+    "static/css/main.45821071.css",
+    "static/js/main.376460e4.js"
   ]
 }
