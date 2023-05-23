@@ -125,6 +125,7 @@ function Footer() {
 
         strategies: strategyNavigationRoutes,
         "user-strategies": strategyNavigationRoutes,
+        "": strategyNavigationRoutes,
         // strategies: strategyNavigationRoutes,
         // strategies: strategyNavigationRoutes,
         // strategies: strategyNavigationRoutes,
@@ -148,9 +149,10 @@ function Footer() {
         // review: reviewNavigationRoutes
     }
     // const navigationRoutes = navigationObject[location.pathname.substring(1)]
-    const key = location.pathname.substring(1)
+    
+    // const key = (location.pathname==="/") ? "strategies" : location.pathname.substring(1)
+    const key = location.pathname.substring(location.pathname.lastIndexOf('/')+1)
     const navigationRoutes = navigationObject[key]
-    console.log(navigationRoutes)
     
     return <footer>
         <div className="block">
