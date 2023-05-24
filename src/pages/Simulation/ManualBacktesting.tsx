@@ -1,5 +1,5 @@
 import Wrapper from "../../sections/Wrapper"
-import {HighCharts} from "../../components/HighCharts"
+import HighCharts from "../../components/HighCharts"
 
 function ManualBacktesting() {
 

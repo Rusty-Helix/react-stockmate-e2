@@ -1,11 +1,28 @@
-// import ScriptTag from 'react-script-tag';
-// import {require} from 'require';
+// @ts-nocheck
+import "./HighCharts.css"
+import Wrapper from "../sections/Wrapper"
+// import { useCallback, useEffect, useState } from "react"
+// import { useParams } from "react-router-dom"
+// import { defaultImages, images } from "../utils/getStrategyImages"
+// import { extractColors } from "extract-colors"
+// import axios from "axios"
 
-export function HighCharts() {
+// import Evolution from "./Strategy/Evolution"
+// import Locations from "./Strategy/Locations"
+// import CapableMoves from "./Strategy/CapableMoves"
+// import Description from "./Strategy/Description"
 
-  var Highcharts = require('highcharts');
-  require('highcharts/modules/exporting')(Highcharts);
+// import { useAppDispatch, useAppSelector } from "../app/hooks"
+// import { setCurrentStrategy } from "../app/slices/StrategySlice"
+// import { setStrategyTab } from "../app/slices/AppSlice"
+// import Loader from "../components/Loader"
+// import {
+//   strategyRoute,
+//   strategySpeciesRoute,
+//   strategyTabs,
+// } from "../utils/Constants"
 
+function HighCharts() {
   function addPopupEvents(chart) {
      var closePopupButtons = document.getElementsByClassName('highcharts-close-popup')
     // Close popup button:
@@ -55,6 +72,7 @@ export function HighCharts() {
         document.querySelectorAll('.highcharts-popup-annotations button')[0],
         'click',
         function () {
+            // console.log('popup-annotations')
              var strokeWidth = parseInt(
                     document.querySelectorAll(
                         '.highcharts-popup-annotations input[name="stroke-width"]'
@@ -254,7 +272,7 @@ Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-ohlcv.json', func
     var shapePaths = document.querySelectorAll("div.highcharts-container > svg > g.highcharts-annotation > g.highcharts-annotation-shapes > path")
     // console.log(shapePaths)
 
-    for (let i = 0; i < shapePaths.length; i+=2){
+    for (let i:number = 0; i < shapePaths.length; i+=2){
       // shapeFillings1 = shapePaths[i]
       // shapeFillings2 = shapePaths[i+1]
       shapePaths[i].style.fill = "rgba(255, 255, 255, 0)"
@@ -404,25 +422,48 @@ Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-ohlcv.json', func
         }
     });
 });
+  // const candlesticks = document.querySelectorAll("path.highcharts-point");
+  // const candlesticks = document.querySelectorAll("path");
+  // console.log(candlesticks)
 
- 
- return (
+  return (
   <div>
-    {/* <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/highstock.js" />
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/modules/data.js" />
 
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/modules/drag-panes.js" />
+    <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/annotations/popup.css"></link>
 
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/indicators/indicators.js" />
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/indicators/bollinger-bands.js" />
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/indicators/ema.js" />
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
 
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/modules/annotations-advanced.js" />
+    <script src="https://code.highcharts.com/stock/modules/drag-panes.js"></script>
 
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/modules/full-screen.js" />
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/modules/price-indicator.js" />
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/stock/modules/stock-tools.js" />
-    <ScriptTag type="text/javascript" src="https://code.highcharts.com/modules/accessibility.js" /> */}
+    <script src="https://code.highcharts.com/stock/indicators/indicators.js"></script>
+    <script src="https://code.highcharts.com/stock/indicators/bollinger-bands.js"></script>
+    <script src="https://code.highcharts.com/stock/indicators/ema.js"></script>
+
+    <script src="https://code.highcharts.com/stock/modules/annotations-advanced.js"></script>
+
+    <script src="https://code.highcharts.com/stock/modules/full-screen.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/price-indicator.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/stock-tools.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    {/* <script src="./highcharts/highstock.js"></script>
+    <script src="./highcharts/data.js"></script>
+
+    <script src="./highcharts/drag-panes.js"></script>
+
+    <script src="./highcharts/indicators.js"></script>
+    <script src="./highcharts/bollinger-bands.js"></script>
+    <script src="./highcharts/ema.js"></script>
+
+    <script src="./highcharts/annotations-advanced.js"></script>
+
+    <script src="./highcharts/full-screen.js"></script>
+    <script src="./highcharts/price-indicator.js"></script>
+    <script src="./highcharts/stock-tools.js"></script>
+    <script src="./highcharts/accessibility.js"></script> */}
+
+
     <div className="chart-wrapper">
   <div className="s-popup s-popup-indicators">
     <span className="highcharts-close-popup">&times</span>
@@ -621,4 +662,4 @@ Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-ohlcv.json', func
   )
 }
 
-export default HighCharts
+export default Wrapper(HighCharts)

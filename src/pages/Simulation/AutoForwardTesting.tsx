@@ -2,7 +2,7 @@ import React from "react";
 import Wrapper from "../../sections/Wrapper";
 // import { TradingViewWidget} from "../components/TradingViewWidget"
 // import { HighCharts} from "../components/HighCharts"
-import TradingViewWidget from "../../components/TradingViewWidget"
+import TradingViewWidget from "../../components/RealtimeWidget"
 function AutoForwardTesting() {
 
   return (
