@@ -10,16 +10,16 @@ function Navbar() {
     const navigationRoutes = [
         {
             name: "股市資訊",
-            route: "/stock",
+            route: "/market-overview",
         },{
             name: "策略圖鑑",
             route: "/strategies",
         },{
             name: "模擬交易",
-            route: "/simulation",
+            route: "/trading-history",
         },{
             name: "投資筆記",
-            route: `/strategies`,
+            route: `/notes`,
         },{
             name: "檢討報告",
             route: "/review",

@@ -8,7 +8,7 @@
 
  License: www.highcharts.com/license
 */
-'use strict';
+
 (function(a) {
   "object" === typeof module && module.exports ? (a["default"] = a, module.exports = a) : "function" === typeof define && define.amd ? define("highcharts/modules/drag-panes", ["highcharts", "highcharts/modules/stock"], function(c) {
     a(c);

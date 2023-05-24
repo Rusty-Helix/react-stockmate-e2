@@ -1,9 +1,9 @@
 import React, {useEffect}from "react";
-import Wrapper from "../sections/Wrapper";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
-import Login from "../components/Login";
-import StrategyCardGrid from "../components/StrategyCardGrid";
-import { getUserStrategies } from "../app/reducers/getUserStrategies";
+import Wrapper from "../../sections/Wrapper";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import Login from "../../components/Login";
+import StrategyCardGrid from "../../components/StrategyCardGrid";
+import { getUserStrategies } from "../../app/reducers/getUserStrategies";
 
 
 function UserStrategies() {

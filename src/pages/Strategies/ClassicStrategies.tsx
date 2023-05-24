@@ -1,13 +1,13 @@
 import React, {useEffect} from "react"
-import Wrapper from "../sections/Wrapper";
-import {useAppDispatch, useAppSelector} from "../app/hooks";
-import {getInitialStrategyData} from "../app/reducers/getInitialStrategyData";
+import Wrapper from "../../sections/Wrapper";
+import {useAppDispatch, useAppSelector} from "../../app/hooks";
+import {getInitialStrategyData} from "../../app/reducers/getInitialStrategyData";
 
-import {getStrategyData} from "../app/reducers/getStrategyData";
-import StrategyCardGrid from "../components/StrategyCardGrid";
-import {debounce} from "../utils/Debounce";
+import {getStrategyData} from "../../app/reducers/getStrategyData";
+import StrategyCardGrid from "../../components/StrategyCardGrid";
+import {debounce} from "../../utils/Debounce";
 
-function Strategies() {
+function ClassicStrategies() {
     const dispatch = useAppDispatch();
     const { allStrategy, randomStrategies } = useAppSelector(
         ({strategy})=>strategy
@@ -57,4 +57,4 @@ function Strategies() {
     </>)
 }
 
-export default Wrapper(Strategies);
+export default Wrapper(ClassicStrategies);

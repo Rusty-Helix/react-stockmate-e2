@@ -1,15 +1,15 @@
 import React from "react";
-import Wrapper from "../sections/Wrapper";
+import Wrapper from "../../sections/Wrapper";
 // import { TradingViewWidget} from "../components/TradingViewWidget"
 // import { HighCharts} from "../components/HighCharts"
 // import { TradingViewWidget} from "../components/TradingViewWidget"
-function AutoBacktesting() {
+function AutoForwardTesting() {
 
   return (
-    <div className="simulation">
+    <div className="auto-forward-testing">
 
 
-      <h1>AutoBacktesing</h1>
+      <h1>Auto Forward Testing</h1>
 
       {/* <TradingViewWidget /> */}
 
@@ -18,4 +18,4 @@ function AutoBacktesting() {
   );
 }
 
-export default Wrapper(AutoBacktesting);
+export default Wrapper(AutoForwardTesting);

@@ -9,23 +9,25 @@ import {Link, useLocation} from "react-router-dom";
 function Footer() {
 
     const stockNavigationRoutes = [
+        // 1 stock
         {
-            name: "股市資訊",
-            route: "/stock",
+            name: "股市總覽", // market-overview
+            route: "/market-overview",
         },{
-            name: "股市資訊",
-            route: "/stock",
+            name: "產業熱力圖", // heatmaps
+            route: "/heatmaps",
         },{
-            name: "股市資訊",
-            route: "/stock",
+            name: "個股排名", // rankings
+            route: "/rankings",
         },{
-            name: "股市資訊",
-            route: `/stock`,
+            name: "新聞時事", // news
+            route: `/news`,
         },{
-            name: "股市資訊",
-            route: "/stock",
+            name: "財經百科", // encyclopedia
+            route: "/encyclopedia",
         },
     ]
+    // 2 strategies
     const strategyNavigationRoutes = [
         {
             name: "你的策略",
@@ -50,17 +52,17 @@ function Footer() {
             name: "交易紀錄",
             route: "/trading-history",
         },{
-            name: "自動回測",
-            route: `/simulation`,
-        },{
             name: "手動回測",
             route: "/manual-backtesting",
         },{
-            name: "自動前測",
-            route: "/simulation",
+            name: "自動回測",
+            route: `/auto-backtesting`,
         },{
             name: "手動前測",
-            route: "/simulation",
+            route: "/manual-forward-testing",
+        },{
+            name: "自動前測",
+            route: "/auto-forward-testing",
         },
     ]
     const notesNavigationRoutes = [
@@ -71,13 +73,13 @@ function Footer() {
             name: "投資筆記",
             route: "/notes",
         },{
-            name: "模擬交易",
+            name: "投資筆記",
             route: "/notes",
         },{
             name: "投資筆記",
             route: `/notes`,
         },{
-            name: "檢討報告",
+            name: "投資筆記",
             route: "/notes",
         },
     ]
@@ -115,8 +117,13 @@ function Footer() {
         // notes: string;
         // review: string;
     }
+
     const navigationObject:NavigationObject = {
-        stock: stockNavigationRoutes,
+        "market-overview": stockNavigationRoutes,
+        "heatmaps": stockNavigationRoutes,
+        "rankings": stockNavigationRoutes,
+        "encyclopedia": stockNavigationRoutes,
+        "news": stockNavigationRoutes,
         // stock: stockNavigationRoutes,
         // stock: stockNavigationRoutes,
         // stock: stockNavigationRoutes,
@@ -125,17 +132,16 @@ function Footer() {
 
         strategies: strategyNavigationRoutes,
         "user-strategies": strategyNavigationRoutes,
-        "": strategyNavigationRoutes,
-        // strategies: strategyNavigationRoutes,
-        // strategies: strategyNavigationRoutes,
-        // strategies: strategyNavigationRoutes,
+        "strategy-analysis": strategyNavigationRoutes,
+        "classic-strategies": strategyNavigationRoutes,
+        "trending-strategies": strategyNavigationRoutes,
 
         simulation: simulationNavigationRoutes,
         "trading-history": simulationNavigationRoutes,
         "manual-backtesting": simulationNavigationRoutes,
         "auto-backtesting": simulationNavigationRoutes,
-        "manual-fronttesting": simulationNavigationRoutes,
-        "auto-fronttesting": simulationNavigationRoutes,
+        "manual-forward-testing": simulationNavigationRoutes,
+        "auto-forward-testing": simulationNavigationRoutes,
         // simulation: simulationNavigationRoutes,
         // simulation: simulationNavigationRoutes,
         // simulation: simulationNavigationRoutes,
@@ -163,6 +169,8 @@ function Footer() {
     
     let key = location.pathname.substring(location.pathname.lastIndexOf('/')+1)
     let navigationRoutes = navigationObject[key]
+    // console.log(key)
+    // console.log(navigationRoutes)
     if (!navigationRoutes) {
         navigationRoutes = strategyNavigationRoutes;
     }

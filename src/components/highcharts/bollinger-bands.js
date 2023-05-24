@@ -7,7 +7,7 @@
 
  License: www.highcharts.com/license
 */
-'use strict';
+
 (function(a) {
   "object" === typeof module && module.exports ? (a["default"] = a, module.exports = a) : "function" === typeof define && define.amd ? define("highcharts/indicators/bollinger-bands", ["highcharts", "highcharts/modules/stock"], function(e) {
     a(e);

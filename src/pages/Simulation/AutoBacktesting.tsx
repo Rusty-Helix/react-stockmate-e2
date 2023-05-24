@@ -1,22 +1,21 @@
 import React from "react";
-import Wrapper from "../sections/Wrapper";
+import Wrapper from "../../sections/Wrapper";
 // import { TradingViewWidget} from "../components/TradingViewWidget"
 // import { HighCharts} from "../components/HighCharts"
 // import { TradingViewWidget} from "../components/TradingViewWidget"
-import TradingViewWidget from "../components/TradingViewWidget"
-function Simulation() {
+function AutoBacktesting() {
 
   return (
-    <div className="simulation">
+    <div className="auto-backtesting">
 
 
-      <h1>Simulation</h1>
+      <h1>Auto Backtesting</h1>
 
-      <TradingViewWidget />
+      {/* <TradingViewWidget /> */}
 
 
     </div>
   );
 }
 
-export default Wrapper(Simulation);
+export default Wrapper(AutoBacktesting);

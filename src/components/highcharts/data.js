@@ -7,7 +7,7 @@
 
  License: www.highcharts.com/license
 */
-'use strict';
+
 var $jscomp = $jscomp || {};
 $jscomp.scope = {};
 $jscomp.arrayIteratorImpl = function(a) {
@@ -220,7 +220,7 @@ $jscomp.polyfill("Array.prototype.values", function(a) {
               text: "text/plain",
               octet: "application/octet-stream"
             },
-            b = new XMLHttpRequest;
+            b = new XMLHttpRequest();
           if (!a.url) return !1;
           b.open((a.type || "get").toUpperCase(), a.url, !0);
           a.headers && a.headers["Content-Type"] || b.setRequestHeader("Content-Type", c[a.dataType || "json"] || c.text);
@@ -342,7 +342,7 @@ $jscomp.polyfill("Array.prototype.values", function(a) {
             parser: function(a) {
               if (!a) return NaN;
               let f = +a[3];
-              f = f > (new Date).getFullYear() -
+              f = f > (new Date()).getFullYear() -
                 2E3 ? f + 1900 : f + 2E3;
               return Date.UTC(f, a[2] - 1, +a[1])
             },
@@ -406,7 +406,7 @@ $jscomp.polyfill("Array.prototype.values", function(a) {
         });
         0 === k.length && k.push(0);
         l.forEach(f => {
-          const l = new K,
+          const l = new K(),
             k = g[z] || b(e),
             n = (a && a.series || [])[z] || {},
             u = F[n.type || e || "line"].prototype.pointArrayMap,
@@ -763,7 +763,7 @@ $jscomp.polyfill("Array.prototype.values", function(a) {
           for (e = 0; e < this.valueCount.seriesBuilders.length; e++) p =
             this.valueCount.seriesBuilders[e], p.populateColumns(r) && c.push(p);
           for (; 0 < r.length;) {
-            p = new K;
+            p = new K();
             p.addColumnReader(0, "x");
             e = r.indexOf(0); - 1 !== e && r.splice(e, 1);
             for (e = 0; e < this.valueCount.global; e++) p.addColumnReader(void 0, this.valueCount.globalPointArrayMap[e]);

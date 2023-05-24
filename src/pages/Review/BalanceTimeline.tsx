@@ -1,9 +1,9 @@
 import React from "react";
-import Wrapper from "../sections/Wrapper";
-import avatarImage from "../assets/creatorAvatar.png";
+import Wrapper from "../../sections/Wrapper";
+import avatarImage from "../../assets/creatorAvatar.png";
 import { FaYoutube, FaGithub, FaLinkedin } from "react-icons/fa";
 
-function Review() {
+function BalanceTimeline() {
   return (
     <div className="profile">
       <img src={avatarImage} alt="" className="profile-image" />
@@ -25,4 +25,4 @@ function Review() {
   );
 }
 
-export default Wrapper(Review);
+export default Wrapper(BalanceTimeline);

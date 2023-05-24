@@ -29,7 +29,7 @@ function StrategyCardGrid({strategies}: {strategies:userStrategiesType[]}) {
                     <div className="strategy-card" key={strategyData.id}>
                         <div className="strategy-card-list">
                             {location.pathname.includes("/strategy") ||
-                             location.pathname.includes("/search") ? (
+                             location.pathname.includes("/strategies") ? (
                                 <FaPlus
                                     className="plus"
                                     onClick={()=>dispatch(addStrategyToList(strategyData))}
