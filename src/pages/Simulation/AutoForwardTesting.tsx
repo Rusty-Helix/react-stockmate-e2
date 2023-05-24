@@ -2,7 +2,7 @@ import React from "react";
 import Wrapper from "../../sections/Wrapper";
 // import { TradingViewWidget} from "../components/TradingViewWidget"
 // import { HighCharts} from "../components/HighCharts"
-// import { TradingViewWidget} from "../components/TradingViewWidget"
+import TradingViewWidget from "../../components/TradingViewWidget"
 function AutoForwardTesting() {
 
   return (
@@ -11,7 +11,7 @@ function AutoForwardTesting() {
 
       <h1>Auto Forward Testing</h1>
 
-      {/* <TradingViewWidget /> */}
+      <TradingViewWidget />
 
 
     </div>
