@@ -42,7 +42,14 @@ function RealtimeWidget() {
             range: "YTD",
             hide_side_toolbar: false,
             allow_symbol_change: true,
-            watchlist: ["TWSE:2412","NYSE:TSM","BCBA:TSMC"],
+            // watchlist: ["TWSE:2412","NYSE:TSM","BCBA:TSMC"],
+
+            watchlist: [
+              "NASDAQ:MSFT",
+              "NASDAQ:META",
+              "NASDAQ:GOOGL",
+              "NASDAQ:AAPL"
+            ],
             details: true,
             hotlist: true,
             calendar: true,
