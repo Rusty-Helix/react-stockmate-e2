@@ -48,19 +48,19 @@ function Footer() {
      const simulationNavigationRoutes = [
         {
             name: "交易紀錄",
-            route: "/history",
+            route: "/trading-history",
+        },{
+            name: "自動回測",
+            route: `/simulation`,
         },{
             name: "手動回測",
-            route: "/strategies",
+            route: "/manual-backtesting",
+        },{
+            name: "自動前測",
+            route: "/simulation",
         },{
             name: "手動前測",
             route: "/simulation",
-        },{
-            name: "自動回測",
-            route: `/strategies`,
-        },{
-            name: "自動前測",
-            route: "/review",
         },
     ]
     const notesNavigationRoutes = [
@@ -92,7 +92,7 @@ function Footer() {
             name: "交易折線圖",
             route: "/review",
         },{
-            name: "投資筆記",
+            name: "盈虧時間軸",
             route: `/review`,
         },{
             name: "檢討報告",
@@ -131,6 +131,11 @@ function Footer() {
         // strategies: strategyNavigationRoutes,
 
         simulation: simulationNavigationRoutes,
+        "trading-history": simulationNavigationRoutes,
+        "manual-backtesting": simulationNavigationRoutes,
+        "auto-backtesting": simulationNavigationRoutes,
+        "manual-fronttesting": simulationNavigationRoutes,
+        "auto-fronttesting": simulationNavigationRoutes,
         // simulation: simulationNavigationRoutes,
         // simulation: simulationNavigationRoutes,
         // simulation: simulationNavigationRoutes,
@@ -151,8 +156,16 @@ function Footer() {
     // const navigationRoutes = navigationObject[location.pathname.substring(1)]
     
     // const key = (location.pathname==="/") ? "strategies" : location.pathname.substring(1)
-    const key = location.pathname.substring(location.pathname.lastIndexOf('/')+1)
-    const navigationRoutes = navigationObject[key]
+    // key = (location.pathname==="") ? "strategies" : key
+    // if (location.pathname.lastIndexOf('/')===-1){
+    //     key = "strategies"
+    // }
+    
+    let key = location.pathname.substring(location.pathname.lastIndexOf('/')+1)
+    let navigationRoutes = navigationObject[key]
+    if (!navigationRoutes) {
+        navigationRoutes = strategyNavigationRoutes;
+    }
     
     return <footer>
         <div className="block">

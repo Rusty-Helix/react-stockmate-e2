@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
-import { HighCharts } from "./components/HighCharts";
+// import { HighCharts } from "./components/HighCharts";
 import App from './App';
 import './index.css';
 
@@ -11,7 +11,7 @@ const root = createRoot(container);
 
 root.render(
     <Provider store={store}>
-      <HighCharts />
+      {/* <HighCharts /> */}
       <App />
     </Provider>
 );

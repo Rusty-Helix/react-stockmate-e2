@@ -15,6 +15,9 @@ import Review from "./pages/Review";
 import Stock from "./pages/Stock";
 import Strategy from "./pages/Strategy";
 import Simulation from "./pages/Simulation";
+import ManualBacktesting from "./pages/ManualBacktesting";
+import AutoBacktesting from "./pages/ManualBacktesting";
+import TradingHistory from "./pages/TradingHistory";
 // @ts-ignore
 import {useAppDispatch, useAppSelector} from "./app/hooks";
 import {onAuthStateChanged} from "firebase/auth";
@@ -65,6 +68,9 @@ function App() {
             <Route element={<Strategy />} path="/strategy/:id" />
             <Route element={<Strategy />} path="/strategy/" />
             <Route element={<Simulation />} path="/simulation/" />
+            <Route element={<TradingHistory />} path="/trading-history/" />
+            <Route element={<ManualBacktesting />} path="/manual-backtesting/" />
+            <Route element={<AutoBacktesting />} path="/auto-backtesting/" />
             <Route element={<Navigate to="/strategies"/>} path="*"/>
           </Routes>
          {/* {
