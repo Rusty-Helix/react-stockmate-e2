@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-stockmate-e2/static/css/main.e018ad60.css",
-    "main.js": "/react-stockmate-e2/static/js/main.f5732268.js",
+    "main.js": "/react-stockmate-e2/static/js/main.91ad8805.js",
     "static/media/creatorAvatar.png": "/react-stockmate-e2/static/media/creatorAvatar.505dc1a9406f85d5eb49.png",
     "static/media/kdj.jpg": "/react-stockmate-e2/static/media/kdj.b5d2f23f9d195b73465d.jpg",
     "static/media/rsi20.jpg": "/react-stockmate-e2/static/media/rsi20.9c3cc2116beeaafffe20.jpg",
@@ -114,10 +114,10 @@
     "static/media/normal.svg": "/react-stockmate-e2/static/media/normal.461bd7373ca90faa99a317a27dfa80d8.svg",
     "static/media/electric.svg": "/react-stockmate-e2/static/media/electric.5b9316bb6f1ac3d4dfb502c6279b27bb.svg",
     "main.e018ad60.css.map": "/react-stockmate-e2/static/css/main.e018ad60.css.map",
-    "main.f5732268.js.map": "/react-stockmate-e2/static/js/main.f5732268.js.map"
+    "main.91ad8805.js.map": "/react-stockmate-e2/static/js/main.91ad8805.js.map"
   },
   "entrypoints": [
     "static/css/main.e018ad60.css",
-    "static/js/main.f5732268.js"
+    "static/js/main.91ad8805.js"
   ]
 }
