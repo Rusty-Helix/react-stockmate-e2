@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-stockmate-e2/static/css/main.5df9cd5c.css",
-    "main.js": "/react-stockmate-e2/static/js/main.040b488f.js",
+    "main.css": "/react-stockmate-e2/static/css/main.e018ad60.css",
+    "main.js": "/react-stockmate-e2/static/js/main.f5732268.js",
     "static/media/creatorAvatar.png": "/react-stockmate-e2/static/media/creatorAvatar.505dc1a9406f85d5eb49.png",
     "static/media/kdj.jpg": "/react-stockmate-e2/static/media/kdj.b5d2f23f9d195b73465d.jpg",
     "static/media/rsi20.jpg": "/react-stockmate-e2/static/media/rsi20.9c3cc2116beeaafffe20.jpg",
@@ -29,6 +29,7 @@
     "static/media/tweezer-bottom.jpg": "/react-stockmate-e2/static/media/tweezer-bottom.72bd114de11014fa78a8.jpg",
     "static/media/bearish-mat-hold.jpg": "/react-stockmate-e2/static/media/bearish-mat-hold.3222eb55fc2156f3679a.jpg",
     "static/media/falling-flag.jpg": "/react-stockmate-e2/static/media/falling-flag.ded49cce4595a190faaf.jpg",
+    "static/media/stockmate-logo.png": "/react-stockmate-e2/static/media/stockmate-logo.dd1cb6fb982d6e0f15d4.png",
     "static/media/bullish-counterattack.jpg": "/react-stockmate-e2/static/media/bullish-counterattack.57288454fcf1fa046b02.jpg",
     "static/media/bearish-spinning-top.jpg": "/react-stockmate-e2/static/media/bearish-spinning-top.ade26c0ebd77af58f206.jpg",
     "static/media/falling-window.jpg": "/react-stockmate-e2/static/media/falling-window.90a70c986333d0d46764.jpg",
@@ -78,7 +79,6 @@
     "static/media/roc.jpg": "/react-stockmate-e2/static/media/roc.75d766962f4e7ef6e797.jpg",
     "static/media/dawn-break.jpg": "/react-stockmate-e2/static/media/dawn-break.ee8a73eccd7f9df15ac0.jpg",
     "static/media/upside-tasuki-gap.jpg": "/react-stockmate-e2/static/media/upside-tasuki-gap.3c8a6447b22ca249d222.jpg",
-    "static/media/stockmate-logo.jpg": "/react-stockmate-e2/static/media/stockmate-logo.887ad6868de3a42b4a7c.jpg",
     "static/media/rising-wedge.jpg": "/react-stockmate-e2/static/media/rising-wedge.e0bc0231c738f110e05b.jpg",
     "static/media/evening-doji-star.jpg": "/react-stockmate-e2/static/media/evening-doji-star.66e59ae8482aa5c9f882.jpg",
     "static/media/clear-sky.jpg": "/react-stockmate-e2/static/media/clear-sky.67b8783e2ea77b0b03be.jpg",
@@ -113,11 +113,11 @@
     "static/media/dark.svg": "/react-stockmate-e2/static/media/dark.e139e03756497c2dbc6d1bafee68036b.svg",
     "static/media/normal.svg": "/react-stockmate-e2/static/media/normal.461bd7373ca90faa99a317a27dfa80d8.svg",
     "static/media/electric.svg": "/react-stockmate-e2/static/media/electric.5b9316bb6f1ac3d4dfb502c6279b27bb.svg",
-    "main.5df9cd5c.css.map": "/react-stockmate-e2/static/css/main.5df9cd5c.css.map",
-    "main.040b488f.js.map": "/react-stockmate-e2/static/js/main.040b488f.js.map"
+    "main.e018ad60.css.map": "/react-stockmate-e2/static/css/main.e018ad60.css.map",
+    "main.f5732268.js.map": "/react-stockmate-e2/static/js/main.f5732268.js.map"
   },
   "entrypoints": [
-    "static/css/main.5df9cd5c.css",
-    "static/js/main.040b488f.js"
+    "static/css/main.e018ad60.css",
+    "static/js/main.f5732268.js"
   ]
 }
