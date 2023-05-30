@@ -6,7 +6,6 @@ function AutoBacktesting() {
   return (
     <div className="auto-backtesting">
 
-
       <h1>Auto Backtesting</h1>
 
     </div>

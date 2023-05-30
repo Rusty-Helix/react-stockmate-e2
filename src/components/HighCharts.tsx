@@ -1,26 +1,5 @@
 // @ts-nocheck
-import "./HighCharts.css"
 import Wrapper from "../sections/Wrapper"
-// import { useCallback, useEffect, useState } from "react"
-// import { useParams } from "react-router-dom"
-// import { defaultImages, images } from "../utils/getStrategyImages"
-// import { extractColors } from "extract-colors"
-// import axios from "axios"
-
-// import Evolution from "./Strategy/Evolution"
-// import Locations from "./Strategy/Locations"
-// import CapableMoves from "./Strategy/CapableMoves"
-// import Description from "./Strategy/Description"
-
-// import { useAppDispatch, useAppSelector } from "../app/hooks"
-// import { setCurrentStrategy } from "../app/slices/StrategySlice"
-// import { setStrategyTab } from "../app/slices/AppSlice"
-// import Loader from "../components/Loader"
-// import {
-//   strategyRoute,
-//   strategySpeciesRoute,
-//   strategyTabs,
-// } from "../utils/Constants"
 
 function HighCharts() {
   function addPopupEvents(chart) {
