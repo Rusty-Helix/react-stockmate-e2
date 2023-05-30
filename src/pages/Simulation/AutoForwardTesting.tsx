@@ -1,8 +1,6 @@
 import React from "react";
 import Wrapper from "../../sections/Wrapper";
-// import { TradingViewWidget} from "../components/TradingViewWidget"
 // import { HighCharts} from "../components/HighCharts"
-import TradingViewWidget from "../../components/RealtimeWidget"
 function AutoForwardTesting() {
 
   return (
@@ -10,9 +8,6 @@ function AutoForwardTesting() {
 
 
       <h1>Auto Forward Testing</h1>
-
-      <TradingViewWidget />
-
 
     </div>
   );

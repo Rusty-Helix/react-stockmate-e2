@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import stockmateLogo from "../assets/stockmate-logo.jpg"
+import stockmateLogo from "../assets/stockmate-logo.png"
 import {GiHamburgerMenu} from "react-icons/gi";
 import {Link, useLocation} from "react-router-dom";
 

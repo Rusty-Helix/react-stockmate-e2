@@ -8,7 +8,6 @@ function ManualBacktesting() {
 
       <h1>Manual Back Testing</h1>
       <HighCharts />
-      {/* <TradingViewWidget /> */}
 
     </div>
   );
